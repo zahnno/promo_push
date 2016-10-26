@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PromoPusher</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+
+<div class="container" ng-app="notifyApp" ng-controller="notifyCtrl">
+	<h1>Push Notifier</h1>
+	<h2>Tap below to enter email address then choose your vendor</h2>
+	<input ng-model='email' placeholder="Email here">
+	<h4 ng-bind='response'></h4>
+	<div class="main" id="first-main">
+		<div class="button" id="macy" ng-click="notify('macy')"><img class="image" id="macy-img" src="../images/Macys.png"></div>
+	</div>
+
+	<div class="main">
+		<div class="button" id="shell" ng-click="notify('shell')"><img class="image" src="../images/shell.svg"></div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.5.8/angular-touch.js""></script>
+
+<script type="text/javascript" src="../app.js"></script>
+</body>
+</html>

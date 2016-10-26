@@ -1,0 +1,11 @@
+{
+  "name": "promo-push",
+  "version": "1.0.0",
+  "description": "promotional push notifier",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
