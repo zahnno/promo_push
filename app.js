@@ -7,7 +7,7 @@ angular.module('notifyApp', ['ngTouch'])
       console.log(choice, $scope.email)
       var data = { "email" : $scope.email, "vendor" : choice}
 
-      $http.post('http://localhost:3002/api/notificator/promoNotify', data)
+      $http.post(api_url, data)
       .then(function(response){
         $scope.response = "Message Sent!"
         $timeout(removeResponse, 2000)
